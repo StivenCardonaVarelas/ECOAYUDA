@@ -1,0 +1,37 @@
+body{
+    background-color: whitesmoke;
+
+
+}
+.nombre{
+
+    background: #ccc;
+    background: linear-gradient(90deg, green,green,black,green, black);
+    font-family: system-ui;
+    font-size: 80px;
+    line-height: 115%;
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+html {
+    background: whitesmoke;
+
+}
+
+.container{
+    text-align: center;
+
+
+}
+a{
+
+    color: green;
+
+}      
+.logotipo{
+
+width: 200px;
+
+}
