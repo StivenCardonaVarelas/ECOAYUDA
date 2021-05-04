@@ -13,7 +13,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="imagenes/LogotipoEcoayuda.jpeg">
-         <link href="Styles.css" rel="Stylesheet" type="text/css">
+        <link href="Styles.css" rel="Stylesheet" type="text/css">
     </head>
     <body>
         <div class="container">
@@ -31,6 +31,11 @@
                 placeholder="Apellido"/>
             <br />
             <h2>Correo electronico:</h2>
+            <input
+                class="form-control"
+                type="email"
+                placeholder="correo electronico" />
+            <br/>
             <h2>Nombre de usuario:</h2>
             <input
                 class="form-control"
@@ -38,6 +43,24 @@
                 placeholder="Nombre usuario"/>
             <br />
             <h2>Contraseña:</h2>
-            
+            <input
+                class="form-control"
+                type="password"
+                placeholder="Contraseña"/>
+            <br/>
+            <br/>
+            <h2> Elije el perfil</h2>
+            <input type="checkbox" id="cbox1" value="admi_checkbox">Administrador</label><br/>
+             <input type="checkbox" id="cbox2" value="usua_checkbox"> <label for="cbox2">Usuario</label><br/>
+                <br />
+            <br/>
+            <button>
+                <a href="Iniciosecion.jsp">Continuar</a>
+            </button>
+            <br />
+            <br />
+            <button>
+                <a href="Iniciosecion.jsp">Regresar</a>
+            </button>
         </div>
 </html>
