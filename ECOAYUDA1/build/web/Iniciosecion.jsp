@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-       <title>Inicio sesion</title>
+        <title>Inicio sesion</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="Styles.css" rel="Stylesheet" type="text/css">
@@ -37,7 +37,7 @@
             <br />
             <br />
             <button>
-                <a href="">Ingresar</a>
+                <a href="Perfiles_usuarios.jsp">Ingresar</a>
             </button>
             <br />
             <br/>
@@ -47,8 +47,6 @@
             <a href="Crear_cuenta.jsp">Crear cuenta</a>
             <br />
             <br />
-
-
             <button>
                 <a href="index.jsp">Regresar</a>
             </button>

@@ -18,10 +18,13 @@ body{
 html {
     background: whitesmoke;
 
+
 }
 
 .container{
     text-align: center;
+    margin-top: 45px;
+
 
 
 }
@@ -32,6 +35,16 @@ a{
 }      
 .logotipo{
 
-width: 200px;
+    width: 200px;
 
+}
+h2{
+    font-size: 20px;
+
+
+}
+.usuario{
+    height: 70%;
+  width: 20%;
+    
 }
