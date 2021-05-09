@@ -7,7 +7,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-     <head>
+    <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Perfil de usuario</title>
         <meta charset="UTF-8">
@@ -32,7 +32,7 @@
             <button>
                 <a href="Iniciosecion.jsp">Salir</a>
             </button>
-            
+
         </div>
     </body>
 </html>

@@ -13,30 +13,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="imagenes/LogotipoEcoayuda.jpeg">
         <link href="Styles.css" rel="Stylesheet" type="text/css">
-        <title>Menu</title>
+        <title>Menú</title>
     </head>
     <body>
         <div  class="container">
             <h1 class="nombre">¿Qué deseas consultar?</h1>
             <br/>
-
+            <div class="cards">
             <div  class="card">
-                <img src="imagenes/huella.svg" alt="huella" style="width:100%">
+                <img src="imagenes/huella.svg" alt="huella" style="width:80%">
                 <h2>Especies</h2>
                 <p><button> <a href="">Ingresar</a></button></p>
             </div>
             <br/>
             <div class="card">
-                <img src="imagenes/bosque.svg" alt="parque" style="width:100%">
+                <img src="imagenes/bosque.svg" alt="parque" style="width:80%">
                 <h2>Parques</h2>
                 <p><button> <a href="">Ingresar</a></button></p>
             </div>
             <br/>
             <div class="card">
-                <img src="imagenes/clinica.svg" alt="clinica" style="width:100%">
+                <img src="imagenes/clinica.svg" alt="clinica" style="width:80%">
                 <h2>Clinicas</h2>
                 <p><button> <a href="">Ingresar</a></button></p>
             </div>
+            </div>
+            <br/>
+            <br/>
+            <button>
+                <a href="Perfiles_usuarios.jsp"> Regresar</a>
+            </button>
 
         </div>
     </body>
