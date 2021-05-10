@@ -121,6 +121,26 @@ button{
     justify-content: center;
     margin-top: 15px;
 }
+.fondoClinica{
+    
+    width: 10rem;
+    height: 10rem;
+    margin-top: -90px;
+}
+
+.boxEspecies{
+    background-color: #FAF6F6;
+    width: 12rem;
+    height: 12rem;
+    margin: 50px;
+    border-radius: 30px;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
 
 
 

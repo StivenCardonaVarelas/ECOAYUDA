@@ -22,15 +22,15 @@
             <br/>
             <div class="cards">
                 <div  class="card">
-                    <img src="" alt="" style="width:100%">
+                    <img src="imagenes/Jardín-Botánico-1.jpg" alt="Jadin Botanico" style="width:100%">
                     <h2>Jardin botanico</h2>
-                    <p><button> <a href="">Ingresar</a></button></p>
+                    <p><button> <a href="Parque1.jsp">Ingresar</a></button></p>
                 </div>
                 <br/>
                 <div  class="card">
                     <img src="" alt="" style="width:100%">
                     <h2>Parque2</h2>
-                    <p><button> <a href="">Ingresar</a></button></p>
+                    <p><button> <a href="Parque2.jsp">Ingresar</a></button></p>
                 </div>
             </div>
             <br/>

@@ -23,7 +23,7 @@
                 <div  class="card">
                     <img src="imagenes/huella.svg" alt="huella" style="width:80%">
                     <h2>Especies</h2>
-                    <p><button> <a href="">Ingresar</a></button></p>
+                    <p><button> <a href="Menu_especies.jsp">Ingresar</a></button></p>
                 </div>
                 <br/>
                 <div class="card">

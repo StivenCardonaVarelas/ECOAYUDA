@@ -1,6 +1,6 @@
 <%-- 
-    Document   : Clinicas
-    Created on : 7/05/2021, 07:42:17 PM
+    Document   : Parque1
+    Created on : 9/05/2021, 06:15:25 PM
     Author     : stive
 --%>
 
@@ -9,25 +9,24 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="imagenes/LogotipoEcoayuda.jpeg">
         <link href="Styles.css" rel="Stylesheet" type="text/css">
-        <title>Nombre de la clinica</title>
+        <title>Jardin Botanico</title>
     </head>
     <body>
+        <body>
         <div class="container">
 
-            <h1 class="nombre">"Nombre Clinica"</h1>
+            <h1 class="nombre">Jardín Botaníco</h1>
             <br/>
             <div class="clinica">
                 
-            <div>
-            <img class="fondo" src="" alt="fondo"/>
+           <div>
+            <img class="fondo" src="" alt=""/>
         </div>
-                <img class="icono" src="imagenes/hospital.svg" alt="foto_clinica" />
+                <img class="icono" src="imagenes/bosque.svg" alt="foto_clinica" />
             </div>
             <br/>
             <br />
@@ -51,9 +50,10 @@
                     </div>
                 </center>
                 <button>
-                <a href="Menuclinicas.jsp"> Regresar</a>
+                <a href="Parques.jsp"> Regresar</a>
             </button>
             </section>
         </div>
+    </body>
     </body>
 </html>
