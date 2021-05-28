@@ -23,7 +23,7 @@
             <div class="clinica">
                 
            <div>
-            <img class="fondo" src="" alt="fondo"/>
+            <img class="fondo" src="" alt=""/>
         </div>
                 <img class="icono" src="imagenes/hospital.svg" alt="foto_clinica" />
             </div>

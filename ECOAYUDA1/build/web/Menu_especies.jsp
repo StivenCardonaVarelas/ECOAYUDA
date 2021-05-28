@@ -25,11 +25,10 @@
                     </div>
                     <center>
                         <button class="buttonEspecies" id="button1">
-                            <a class="link">Aves</a>
+                            <a class="link" href="">Aves</a>
                         </button>                        
                     </center>
                 </div>
-                <br/>
                 <br/>
                 <div class="boxEspecies">
                     <div class="image">
@@ -42,7 +41,6 @@
                     </center>
                 </div>
                 <br/>
-                <br/>
                 <div class="boxEspecies">
                     <div class="image">
                         <img src="imagenes/reptil.png" alt="reptil" style="width: 100px;" />
@@ -53,9 +51,7 @@
                         </button>                        
                     </center>
                     <br/> 
-                    <br/>
                 </div>
-
                 <div class="boxEspecies">
                     <div class="image">
                         <img src="imagenes/anfibio.png" alt="anfibio" style="width: 100px;" />
@@ -66,7 +62,6 @@
                         </button>                        
                     </center>
                 </div>
-                <br/>
                 <br/>
                 <div class="boxEspecies">
                     <div class="image">
@@ -79,7 +74,6 @@
                     </center>
                 </div>
                 <br/> 
-                <br/>
                 <div class="boxEspecies">
                     <div class="image">
                         <img src="imagenes/mosquito.png" alt="mosquito" style="width: 100px;" />
@@ -91,7 +85,6 @@
                     </center>
                 </div>
                 <br/> 
-                <br/>
                 <div class="boxEspecies">
                     <div class="image">
                         <img src="imagenes/hormiga.png" alt="hormiga" style="width: 100px;" />
@@ -103,7 +96,6 @@
                     </center>
                 </div>
                 <br/>
-                <br/>
                 <div class="boxEspecies">
                     <div class="image">
                         <img src="imagenes/arana.png" alt="araña" style="width: 100px;" /> 
@@ -114,8 +106,7 @@
                         </button>                        
                     </center>
                 </div>
-                 <br/>
-                  <br/>
+                <br/>
                 <div class="boxEspecies">
                     <div class="image">
                         <img src="imagenes/gusano.png" alt="gusano" style="width: 100px;" />
@@ -126,9 +117,14 @@
                         </button>                        
                     </center>
                 </div>
+                <div/> 
             </div>
         </div>
-
+        <button>
+            <a href="Menu_usuario.jsp"> Regresar</a>
+        </button>
+            <br/>
+            <br/>
     </div>
 </body>
 </html>

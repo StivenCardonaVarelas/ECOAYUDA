@@ -26,7 +26,6 @@
                     <h2>Jardin botanico</h2>
                     <p><button> <a href="Parque1.jsp">Ingresar</a></button></p>
                 </div>
-                <br/>
                 <div  class="card">
                     <img src="" alt="" style="width:100%">
                     <h2>Parque2</h2>

@@ -30,6 +30,12 @@
                     <h2></h2>
                     <p><button> <a href="Clinica2.jsp">Ingresar</a></button></p>
                 </div>
+                <br/>
+                <div  class="card">
+                    <img src="" alt="" style="width:100%">
+                    <h2></h2>
+                    <p><button> <a href="Clinica2.jsp">Ingresar</a></button></p>
+                </div>
             </div>
             <br/>
             <br/>
