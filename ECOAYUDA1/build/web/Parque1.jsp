@@ -26,7 +26,7 @@
            <div>
             <img class="fondo" src="" alt=""/>
         </div>
-                <img class="icono" src="imagenes/bosque.svg" alt="foto_clinica" />
+                <img class="icono" src="imagenes/Jardín-Botánico-1.jpg" alt="foto_GardinBotanico" />
             </div>
             <br/>
             <br />

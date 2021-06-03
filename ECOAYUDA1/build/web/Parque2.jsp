@@ -19,14 +19,15 @@
         <body>
         <div class="container">
 
-            <h1 class="nombre">Nombre de parque</h1>
+            <h1 class="nombre">Parque de la conservación</h1>
             <br/>
             <div class="clinica">
                 
            <div>
             <img class="fondo" src="" alt=""/>
         </div>
-                <img class="icono" src="imagenes/bosque.svg" alt="foto_clinica" />
+                <img class="icono" src="imagenes/logo-parque-de-la-conservacion.png" alt="foto_parqueConservacion" />
+               
             </div>
             <br/>
             <br />

@@ -22,13 +22,14 @@
             <br/>
             <div class="cards">
                 <div  class="card">
-                    <img src="imagenes/Jardín-Botánico-1.jpg" alt="Jadin Botanico" style="width:100%">
+                    <img src="imagenes/Jardín-Botánico-1.jpg" alt="Jadin Botanico" style="width:80px">
                     <h2>Jardin botanico</h2>
                     <p><button> <a href="Parque1.jsp">Ingresar</a></button></p>
                 </div>
                 <div  class="card">
-                    <img src="" alt="" style="width:100%">
-                    <h2>Parque2</h2>
+                    <img src="imagenes/logo-parque-de-la-conservacion.png" alt="" style="width:80px">
+                    <br/>
+                    <h2>Parque de la Conservación</h2>
                     <p><button> <a href="Parque2.jsp">Ingresar</a></button></p>
                 </div>
             </div>
