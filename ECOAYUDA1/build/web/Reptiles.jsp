@@ -1,6 +1,6 @@
 <%-- 
-    Document   : Aves2
-    Created on : 3/06/2021, 01:41:06 PM
+    Document   : Reptil
+    Created on : 5/06/2021, 01:44:52 PM
     Author     : stive
 --%>
 
@@ -11,46 +11,47 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="shortcut icon" href="imagenes/LogotipoEcoayuda.jpeg">
         <link href="Styles.css" rel="Stylesheet" type="text/css">
-        <title>Aves</title>
+        <title>Reptiles</title>
     </head>
     <body>
         <div class="container">
-            <h1 class="nombre">Selecciona el tipo de ave</h1>
+            <h1 class="nombre">Selecciona el tipo de reptil</h1>
             <br/>
-            <div class="cards" class="boxEspecies">
-                <div  class="card">
-                    <img src="imagenes/ave4.jpg" alt="Tucancillo collarejo" style="width:60%">
-                    <h2>Tucancillo collarejo</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="imagenes/reptil.jpg" alt="Tortuga" style="width:85%">
+                    <h2>Tortuga</h2>
                     <p><button> <a href="Menu_especies.jsp">Ver</a></button></p>
                 </div>
                 <br/>
-                <div  class="card">
-                    <img src="imagenes/ave5.jpg" alt="Carpintero bellotero" style="width:75%">
-                    <h2>Carpintero bellotero</h2>
+                <div class="card">
+                    <img src="imagenes/reptil2.jpg" alt="Cocodrilo" style="width:85%">
+                    <h2>Cocodrilo</h2>
                     <p><button> <a href="Menu_especies.jsp">Ver</a></button></p>
                 </div>
                 <br/>
-                <div  class="card">
-                    <img src="imagenes/ave6.jpg" alt="Gallito de las rocas peruano" style="width:75%">
-                    <h2>Gallito de las rocas peruano</h2>
+                <div class="card">
+                    <img src="imagenes/reptil1.jpg" alt="Lagarto" style="width:85%">
+                    <h2>Lagarto</h2>
                     <p><button> <a href="Menu_especies.jsp">Ver</a></button></p>
                 </div>
                 <br/>
-                <div  class="card">
-                    <img src="imagenes/ave7.jpg" alt="Torito cabecirrojo" style="width:75%">
-                    <h2>Torito cabecirrojo</h2>
+                <div class="card">
+                    <img src="imagenes/reptil3.jpg" alt="Serpiente" style="width:85%">
+                    <h2>Serpiente</h2>
                     <p><button> <a href="Menu_especies.jsp">Ver</a></button></p>
                 </div>
-
             </div>
             <br/>
+            <br/>
+            <br/>
             <button>
-                <a href="Aves.jsp"> Regresar</a>
+                <a href="Reptiles2.jsp">Siguiente</a>
             </button>
             <br/>
             <br/>
             <button>
-                <a href="Menu_especies.jsp"> Salir</a>
+                <a href="Menu_especies.jsp"> Regresar</a>
             </button>
         </div>
     </body>

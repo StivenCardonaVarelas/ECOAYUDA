@@ -16,7 +16,7 @@
     </head>
     <body>
         <div class="container">
-            <h1 class="nombre">Selecciona el tipo de especie que quieres buscar</h1>
+            <h1 class="nombre">Selecciona el tipo de especie que quieres conocer</h1>
             <br/>
             <div class="cards">
                 <div class="boxEspecies">
@@ -36,7 +36,7 @@
                     </div>
                     <center>
                         <button class="buttonEspecies" id="button1">
-                            <a class="link">Peces</a>
+                            <a class="link" href="Peces.jsp">Peces</a>
                         </button>                        
                     </center>
                 </div>
@@ -47,7 +47,7 @@
                     </div>
                     <center>
                         <button class="buttonEspecies" id="button1">
-                            <a class="link">Reptiles</a>
+                            <a class="link" href="Reptiles.jsp">Reptiles</a>
                         </button>                        
                     </center>
                     <br/> 
