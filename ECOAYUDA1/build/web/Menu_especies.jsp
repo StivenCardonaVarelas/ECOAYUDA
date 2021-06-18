@@ -58,7 +58,7 @@
                     </div>
                     <center>
                         <button class="buttonEspecies" id="button1">
-                            <a class="link">Anfibios</a>
+                            <a class="link" href="Anfibios.jsp">Anfibios</a>
                         </button>                        
                     </center>
                 </div>
@@ -69,7 +69,7 @@
                     </div>
                     <center>
                         <button class="buttonEspecies" id="button1">
-                            <a class="link">Mamíferos</a>
+                            <a class="link" href="Mamifero.jsp">Mamíferos</a>
                         </button>                        
                     </center>
                 </div>
@@ -80,7 +80,7 @@
                     </div>
                     <center>
                         <button class="buttonEspecies" id="button1">
-                            <a class="link">Insectos</a>
+                            <a class="link" href=Insectos.jps>Insectos</a>
                         </button>                        
                     </center>
                 </div>
@@ -91,7 +91,7 @@
                     </div>
                     <center>
                         <button class="buttonEspecies" id="button1">
-                            <a class="link">Artrópodos</a>
+                            <a class="link" href="Artropodos.jsp">Artrópodos</a>
                         </button>                        
                     </center>
                 </div>
@@ -102,7 +102,7 @@
                     </div>
                     <center>
                         <button class="buttonEspecies" id="button1">
-                            <a class="link">Arácnidos</a>
+                            <a class="link" href="Aracnidos.jsp">Arácnidos</a>
                         </button>                        
                     </center>
                 </div>
@@ -113,7 +113,7 @@
                     </div>
                     <center>
                         <button class="buttonEspecies" id="button1">
-                            <a class="link">Anélidos</a>
+                            <a class="link" href="Anelidos.jsp">Anélidos</a>
                         </button>                        
                     </center>
                 </div>

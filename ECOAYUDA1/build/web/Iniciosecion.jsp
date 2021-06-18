@@ -41,10 +41,10 @@
             </button>
             <br />
             <br/>
-            <a href="Recuperar_contra.jsp">Olvidaste tu contraseña</a>
+            <a id="Recu-contra" href="Recuperar_contra.jsp">Olvidaste tu contraseña</a>
             <br />
             <br />
-            <a href="Crear_cuenta.jsp">Crear cuenta</a>
+            <a id="crear-cuenta" href="Crear_cuenta.jsp">Crear cuenta</a>
             <br />
             <br />
             <button>
