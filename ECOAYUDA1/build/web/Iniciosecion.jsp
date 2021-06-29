@@ -18,38 +18,41 @@
     <body>
 
         <div class="container">
-            <h1>Usuario</h1>
-            <input
-                class="form-control"
-                type="text"
-                placeholder="Nombre usuario"
+            <h1 class="nombre">Inicio Sesion</h1>
+            <form>
+                <h2>Usuario</h2>
+                <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Nombre usuario"
 
-                />
-            <br />
-            <br />
-            <h1>Contraseña</h1>
-            <input
-                class="form-control"
-                type="password"
-                placeholder="Contraseña"
+                    />
+                <br />
+                <br />
+                <h2>Contraseña</h2>
+                <input
+                    class="form-control"
+                    type="password"
+                    placeholder="Contraseña"
 
-                />
-            <br />
-            <br />
-            <button>
-                <a href="Perfiles_usuarios.jsp">Ingresar</a>
-            </button>
-            <br />
-            <br/>
-            <a id="Recu-contra" href="Recuperar_contra.jsp">Olvidaste tu contraseña</a>
-            <br />
-            <br />
-            <a id="crear-cuenta" href="Crear_cuenta.jsp">Crear cuenta</a>
-            <br />
-            <br />
-            <button>
-                <a href="index.jsp">Regresar</a>
-            </button>
+                    />
+                <br />
+                <br />
+                <button>
+                    <a href="Perfiles_usuarios.jsp">Ingresar</a>
+                </button>
+                <br />
+                <br/>
+                <a id="Recu-contra" href="Recuperar_contra.jsp">Olvidaste tu contraseña</a>
+                <br />
+                <br />
+                <a id="crear-cuenta" href="Crear_cuenta.jsp">Crear cuenta</a>
+                <br />
+                <br />
+                <button>
+                    <a href="index.jsp">Regresar</a>
+                </button>
+            </form>
         </div>
     </body>
 </html>

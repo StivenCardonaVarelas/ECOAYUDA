@@ -18,7 +18,7 @@
     </head>
     <body>
         
-        <div class="container">
+        <div class="container_inicio">
             <img class="logotipo" src="imagenes/LogotipoEcoayuda.jpeg" alt="Logotipo"/>
             <h1 class="nombre">ECOAYUDA </h1>
             <button>

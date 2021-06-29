@@ -16,7 +16,7 @@
     </head>
     <body>
         <div class="container">
-            <h1 class="nombre">Elije la clinica a conocer</h1>
+            <h1 class="nombre">Elije la Veterinaria a conocer</h1>
             <br/>
             <div class="cards">
                 <div  class="card">
@@ -34,7 +34,7 @@
                 <div  class="card">
                     <img src="" alt="" style="width:100%">
                     <h2></h2>
-                    <p><button> <a href="Clinica2.jsp">Ingresar</a></button></p>
+                    <p><button> <a href="Clinica3.jsp">Ingresar</a></button></p>
                 </div>
             </div>
             <br/>

@@ -20,7 +20,7 @@
     <body>
         <div class="container">
 
-            <h1 class="nombre">"Nombre Clinica"</h1>
+            <h1 class="nombre">"Nombre Veterinaria"</h1>
             <br/>
             <div class="clinica">
                 
@@ -38,9 +38,9 @@
                     <div class="containerClinica">
 
                         <div class="boxClinica">
-                            <p>Nombre: ***********</p>
-                            <p>Dirección: **********</p>
-                            <p>Horario: ***********</p>
+                            <p>Dirección: <label id="Direccion_botanico"> ****** </label> </p>
+                            <p>Horario:   <label id="Horaio_botanico"> ****** </label>  </p>
+                            <p>Telefono:   <label id="Telefono_botanico"> ****** </label>  </p>
                         </div>
 
                         <div class="boxDireccionClinica">

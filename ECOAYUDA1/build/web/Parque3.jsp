@@ -1,6 +1,6 @@
 <%-- 
-    Document   : Parque1
-    Created on : 9/05/2021, 06:15:25 PM
+    Document   : Parque3
+    Created on : 27/06/2021, 01:52:25 PM
     Author     : stive
 --%>
 
@@ -9,27 +9,22 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="imagenes/LogotipoEcoayuda.jpeg">
         <link href="Styles.css" rel="Stylesheet" type="text/css">
-        <title>Jardin Botanico</title>
+        <title>Parque explora</title>
     </head>
-    <body>
     <body>
         <div class="container">
 
-            <h1 class="nombre">Jardín Botaníco</h1>
+            <h1 class="nombre">Parque Explora</h1>
             <br/>
             <div class="parque">
                 <div>
-                    <img class="icono" src="imagenes/Jardín-Botánico-1.jpg" alt="foto_GardinBotanico" />
+                    <img class="icono" src="imagenes/parque3.png" alt="foto_GardinBotanico" />
                 </div>
             </div>
             <br/>
             <br />
-
-
             <section>
                 <center>
                     <div class="containerparque">
@@ -53,5 +48,4 @@
             </section>
         </div>
     </body>
-</body>
 </html>

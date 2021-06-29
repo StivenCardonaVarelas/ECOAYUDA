@@ -116,6 +116,17 @@
                             <a class="link" href="Anelidos.jsp">Anélidos</a>
                         </button>                        
                     </center>
+                </div
+                <br/>
+                 <div class="boxEspecies">
+                    <div class="image">
+                        <img src="imagenes/cnidario.png" alt="gusano" style="width: 100px;" />
+                    </div>
+                    <center>
+                        <button class="buttonEspecies" id="button1">
+                            <a class="link" href="Anelidos.jsp">Cnidarios</a>
+                        </button>                        
+                    </center>
                 </div>
                 <div/> 
             </div>

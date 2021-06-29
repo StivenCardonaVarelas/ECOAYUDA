@@ -1,6 +1,6 @@
 <%-- 
-    Document   : Parque1
-    Created on : 9/05/2021, 06:15:25 PM
+    Document   : Clinica3
+    Created on : 27/06/2021, 02:36:29 PM
     Author     : stive
 --%>
 
@@ -13,34 +13,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="imagenes/LogotipoEcoayuda.jpeg">
         <link href="Styles.css" rel="Stylesheet" type="text/css">
-        <title>Jardin Botanico</title>
+        <title>Nombre de la clinica</title>
     </head>
-    <body>
     <body>
         <div class="container">
 
-            <h1 class="nombre">Jardín Botaníco</h1>
+            <h1 class="nombre">"Nombre Veterinaria"</h1>
             <br/>
-            <div class="parque">
-                <div>
-                    <img class="icono" src="imagenes/Jardín-Botánico-1.jpg" alt="foto_GardinBotanico" />
-                </div>
+            <div class="clinica">
+                
+           <div>
+            <img class="fondo" src="" alt=""/>
+        </div>
+                <img class="icono" src="imagenes/hospital.svg" alt="foto_clinica" />
             </div>
             <br/>
             <br />
-
+            
 
             <section>
                 <center>
-                    <div class="containerparque">
+                    <div class="containerClinica">
 
-                        <div class="boxparque">
+                        <div class="boxClinica">
                             <p>Dirección: <label id="Direccion_botanico"> ****** </label> </p>
                             <p>Horario:   <label id="Horaio_botanico"> ****** </label>  </p>
                             <p>Telefono:   <label id="Telefono_botanico"> ****** </label>  </p>
                         </div>
 
-                        <div class="boxDireccionparque">
+                        <div class="boxDireccionClinica">
                             <div class="image">
                                 <img src="imagenes/Captura.PNG" alt="img_2" style="width: 300px; border-radius: 30px;" />
                             </div>
@@ -48,10 +49,9 @@
                     </div>
                 </center>
                 <button>
-                    <a href="Parques.jsp"> Regresar</a>
-                </button>
+                <a href="Menuclinicas.jsp"> Regresar</a>
+            </button>
             </section>
         </div>
     </body>
-</body>
 </html>

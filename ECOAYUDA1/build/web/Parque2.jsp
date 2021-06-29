@@ -22,28 +22,23 @@
             <h1 class="nombre">Parque de la conservación</h1>
             <br/>
             <div class="clinica">
-                
            <div>
-            <img class="fondo" src="" alt=""/>
-        </div>
-                <img class="icono" src="imagenes/logo-parque-de-la-conservacion.png" alt="foto_parqueConservacion" />
-               
+            <img class="icono" src="imagenes/logo-parque-de-la-conservacion.png" alt="foto_parqueConservacion" />
+        </div>  
             </div>
             <br/>
             <br />
-            
-
             <section>
                 <center>
-                    <div class="containerClinica">
+                    <div class="containerparque">
 
-                        <div class="boxClinica">
-                            <p>Nombre: ***********</p>
-                            <p>Dirección: **********</p>
-                            <p>Horario: ***********</p>
+                        <div class="boxparque">
+                            <p>Dirección: <label id="Direccion_botanico"> ****** </label> </p>
+                            <p>Horario:   <label id="Horaio_botanico"> ****** </label>  </p>
+                            <p>Telefono:   <label id="Telefono_botanico"> ****** </label>  </p>
                         </div>
 
-                        <div class="boxDireccionClinica">
+                        <div class="boxDireccionparque">
                             <div class="image">
                                 <img src="imagenes/Captura.PNG" alt="img_2" style="width: 300px; border-radius: 30px;" />
                             </div>

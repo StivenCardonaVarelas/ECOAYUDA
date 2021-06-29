@@ -18,7 +18,8 @@
     <body>
         <div class="container">
             <h1 class="nombre">Registrarse</h1>
-            <h2>Nombre:</h2>
+            <form>
+                  <h2>Nombre:</h2>
             <input
                 class="form-control"
                 type="text"
@@ -48,19 +49,19 @@
                 type="password"
                 placeholder="Contraseña"/>
             <br/>
-            <br/>
             <h2> Elije el perfil</h2>
-            <input type="checkbox" id="cbox1" value="admi_checkbox">Administrador</label><br/>
-             <input type="checkbox" id="cbox2" value="usua_checkbox"> <label for="cbox2">Usuario</label><br/>
-                <br />
+            <select>
+                <option>Administrador</option>
+                <option>Usuario</option>
+            </select>
             <br/>
             <button>
                 <a href="Iniciosecion.jsp">Continuar</a>
             </button>
             <br />
-            <br />
             <button>
                 <a href="Iniciosecion.jsp">Regresar</a>
             </button>
+            </form>
         </div>
 </html>

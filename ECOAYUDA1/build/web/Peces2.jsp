@@ -20,26 +20,29 @@
             <br/>
             <div class="cards">
                 <div class="card">
-                    <img src="imagenes/pez4.jpg" alt="Apteronotus galvisi" style="width:100%">
-                    <h2>Apteronotus galvisi</h2>
+                    <img src="imagenes/pez4.gif" alt="Pez angel" style="width:145%">
+                    <h2>Pez angel</h2>
                     <p><button> <a href="Menu_especies.jsp">Ver</a></button></p>
                 </div>
                 <br/>
                 <div class="card">
-                    <img src="imagenes/pez5.jpg" alt="Astyanax fasciatus" style="width:100%">
-                    <h2>Astyanax fasciatus</h2>
+                    <img src="imagenes/pez5.webp" alt="Piraña negra" style="width:100%">
+                    <h2>Piraña negra</h2>
                     <p><button> <a href="Menu_especies.jsp">Ver</a></button></p>
                 </div>
                 <br/>
                 <div class="card">
-                    <img src="imagenes/pez6.jpg" alt="Astyanax magdalenae" style="width:100%">
-                    <h2>Astyanax magdalenae</h2>
+                    <img src="imagenes/pez6.webp" alt="Pez molly" style="width:100%">
+                    <h2>Pez molly</h2>
                     <p><button> <a href="Menu_especies.jsp">Ver</a></button></p>
                 </div>
                 <br/>
                 <div class="card">
-                    <img src="imagenes/pez7.jpg" alt="Carlastyanax aurocaudatus" style="width:70%">
-                    <h2>Carlastyanax aurocaudatus</h2>
+                    <img src="imagenes/pez7.png" alt="Raya motro" style="width:100%">
+                    <br/>
+                    <br/>
+                    <br/>
+                    <h2>Raya motoro</h2>
                     <p><button> <a href="Menu_especies.jsp">Ver</a></button></p>
                 </div>
             </div>
