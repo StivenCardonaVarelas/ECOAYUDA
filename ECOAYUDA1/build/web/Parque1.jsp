@@ -35,9 +35,9 @@
                     <div class="containerparque">
 
                         <div class="boxparque">
-                            <p>Dirección: <label id="Direccion_botanico"> ****** </label> </p>
-                            <p>Horario:   <label id="Horaio_botanico"> ****** </label>  </p>
-                            <p>Telefono:   <label id="Telefono_botanico"> ****** </label>  </p>
+                            <p>Dirección: <label name="Direccion_botanico"> ****** </label> </p>
+                            <p>Horario:   <label name="Horaio_botanico"> ****** </label>  </p>
+                            <p>Telefono:   <label name="Telefono_botanico"> ****** </label>  </p>
                         </div>
 
                         <div class="boxDireccionparque">

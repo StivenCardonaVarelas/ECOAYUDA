@@ -20,7 +20,7 @@
             <br/>
             <div class="cards">
                 <div class="card">
-                    <img  src="imagenes/pez.gif" alt="Pez payaso" style="width:100%">
+                    <img  src="imagenes/pez.png" alt="Pez payaso" style="width:60%">
                     <h2>Pez payaso</h2>
                     <p><button> <a href="Menu_especies.jsp">Ver</a></button></p>
                 </div>

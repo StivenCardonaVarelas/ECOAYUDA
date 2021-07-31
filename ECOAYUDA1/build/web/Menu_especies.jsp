@@ -43,7 +43,7 @@
                 <br/>
                 <div class="boxEspecies">
                     <div class="image">
-                        <img src="imagenes/reptil.png" alt="reptil" style="width: 100px;" />
+                        <img src="imagenes/reptilmenu.png" alt="reptil" style="width: 100px;" />
                     </div>
                     <center>
                         <button class="buttonEspecies" id="button1">

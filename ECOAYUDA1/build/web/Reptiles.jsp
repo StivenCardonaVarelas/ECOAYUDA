@@ -19,26 +19,26 @@
             <br/>
             <div class="cards">
                 <div class="card">
-                    <img src="imagenes/reptil.jpg" alt="Tortuga" style="width:85%">
-                    <h2>Tortuga</h2>
+                    <img src="imagenes/reptil.png" alt="Tortuga matamata" style="width:100%">
+                    <h2>Tortuga matamata</h2>
                     <p><button> <a href="Menu_especies.jsp">Ver</a></button></p>
                 </div>
                 <br/>
                 <div class="card">
-                    <img src="imagenes/reptil2.jpg" alt="Cocodrilo" style="width:85%">
-                    <h2>Cocodrilo</h2>
+                    <img src="imagenes/reptil2.png" alt="Dragon barbudo" style="width:85%">
+                    <h2>Dragon barbudo</h2>
                     <p><button> <a href="Menu_especies.jsp">Ver</a></button></p>
                 </div>
                 <br/>
                 <div class="card">
-                    <img src="imagenes/reptil1.jpg" alt="Lagarto" style="width:85%">
-                    <h2>Lagarto</h2>
+                    <img src="imagenes/reptil1.png" alt="Geco" style="width:100%">
+                    <h2>Geco</h2>
                     <p><button> <a href="Menu_especies.jsp">Ver</a></button></p>
                 </div>
                 <br/>
                 <div class="card">
-                    <img src="imagenes/reptil3.jpg" alt="Serpiente" style="width:85%">
-                    <h2>Serpiente</h2>
+                    <img src="imagenes/reptil3.png" alt="Anaconda" style="width:85%">
+                    <h2>Anaconda</h2>
                     <p><button> <a href="Menu_especies.jsp">Ver</a></button></p>
                 </div>
             </div>
