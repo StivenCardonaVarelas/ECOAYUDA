@@ -14,8 +14,8 @@ public class Listas {
     Nodo cabeza=null;
  Nodo apuntador=null;
  int size=0;
- public void insertarPrincipioNodo(String cedula, String nombre) {
-        Nodo newNodo = new Nodo(new Usuario(cedula, nombre));
+ public void insertarPrincipioNodo(String nombreUsuario, String nombre,String apellido, String contrasena, String correo, String perfil) {
+        Nodo newNodo = new Nodo(new Usuario(nombreUsuario, nombre, apellido, contrasena, correo, perfil));
         if (cabeza == null) {
             cabeza = newNodo;
         } else {
@@ -25,8 +25,8 @@ public class Listas {
         }
     size++;
     }
- public void insertarFinalNodo(String nombreUsuario, String nombre) {
-        Nodo newNodo = new Nodo(new Usuario(nombreUsuario, nombre));
+ public void insertarFinalNodo(String nombreUsuario, String nombre, String apellido, String contrasena, String correo, String perfil) {
+        Nodo newNodo = new Nodo(new Usuario(nombreUsuario, nombre, apellido, contrasena, correo, perfil));
       apuntador=null;
         if (cabeza == null) {
             newNodo = cabeza;
