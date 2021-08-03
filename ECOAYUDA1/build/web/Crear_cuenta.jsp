@@ -30,11 +30,13 @@
                 <input
                     class="form-control"
                     type="text"
+                    name="apellido"
                     placeholder="Apellido"/>
                 <br />
                 <h2>Correo electronico:</h2>
                 <input
                     class="form-control"
+                    name="correo"
                     type="email"
                     placeholder="correo electronico" />
                 <br/>
@@ -49,10 +51,12 @@
                 <input
                     class="form-control"
                     type="password"
+                    name="contrasena"
                     placeholder="Contraseña"/>
                 <br/>
                 <h2> Elije el perfil</h2>
-                <select>
+                <select name="perfil">
+         
                     <option>Administrador</option>
                     <option>Usuario</option>
                 </select>
@@ -70,12 +74,17 @@
             if (lista != null) {
                 String nombreUsuario = request.getParameter("nombreUsuario");
                 String nombre = request.getParameter("nombre");
+                String apellido=request.getParameter("apellido");
+                String contrasena=request.getParameter("contrasena");
+                String correo=request.getParameter("correo");
+                String perfil=request.getParameter("perfil");
                 if (nombreUsuario != null) {
-                    lista.insertarPrincipioNodo(nombreUsuario, nombre);
+                    lista.insertarPrincipioNodo(nombreUsuario, nombre,apellido,contrasena,correo,perfil);
                     lista.mostrar();
                     out.println("<table border='4'>");
                     for (int i = 0; i < lista.getSize(); i++) {
-                        out.println("<tr><td>" + lista.getUsuario(i).nombreUsuario + "</td><td>" + lista.getUsuario(i).nombre + "</td></tr>");
+                        out.println("<tr><td>" + lista.getUsuario(i).nombreUsuario + "</td><td>" + lista.getUsuario(i).nombre + "</td><td>" + lista.getUsuario(i).apellido + "</td><td>" + lista.getUsuario(i).contrasena + "</td><td>" + lista.getUsuario(i).correo + "</td><td>" + lista.getUsuario(i).perfil + "</td></tr>");
+                        
                     }
                 }
             } else {

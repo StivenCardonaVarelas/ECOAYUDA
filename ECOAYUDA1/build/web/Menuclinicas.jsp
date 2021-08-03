@@ -20,20 +20,19 @@
             <br/>
             <div class="cards">
                 <div  class="card">
-                    <img src="imagenes/clinica1.jpg" alt="" style="width:100%">
-                 
+                    <img src="" alt="" style="width:100%">
                     <h2></h2>
                     <p><button> <a href="Clinica1.jsp">Ingresar</a></button></p>
                 </div>
                 <br/>
                 <div  class="card">
-                    <img src="imagenes/clinica2.png" alt="" style="width:100%" margin="0">
+                    <img src="" alt="" style="width:100%">
                     <h2></h2>
                     <p><button> <a href="Clinica2.jsp">Ingresar</a></button></p>
                 </div>
                 <br/>
                 <div  class="card">
-                    <img src="imagenes/clinica3.png" alt="" style="width:100%" margin="0">
+                    <img src="" alt="" style="width:100%">
                     <h2></h2>
                     <p><button> <a href="Clinica3.jsp">Ingresar</a></button></p>
                 </div>
