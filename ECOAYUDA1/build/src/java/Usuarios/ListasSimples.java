@@ -26,6 +26,8 @@ public class ListasSimples {
         lista.insertarFinalNodo("luis212", "Luis","lopera","123","aaa@tets.com","admin");
         lista.mostrar();
         System.out.println("Lista recuperada por posición " + lista.getUsuario(2).nombre);
+        System.out.println("Lista recuperada por posición "+ lista.getUsuario(2).apellido);
+        System.out.println("Lista recuperada por posición"+ lista.getUsuario(2).perfil);
     }
     
 }

@@ -1,7 +1,7 @@
 package Usuarios;
 
 
-import Usuarios.Usuario;
+
 
 /*
  * To change this license header, choose License Headers in Project Properties.
