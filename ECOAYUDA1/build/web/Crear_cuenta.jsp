@@ -12,19 +12,21 @@
         <title>Crear cuenta</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="Js/Js1.js"></script>
         <link rel="shortcut icon" href="imagenes/LogotipoEcoayuda.jpeg">
         <link href="Styles.css" rel="Stylesheet" type="text/css">
     </head>
     <body>
         <div class="container">
             <h1 class="nombre">Registrarse</h1>
-            <form>
+            <form method="post" action="Usuarios" onsubmit="return validar()">
                 <h2>Nombre:</h2>
                 <input
                     class="form-control"
                     type="text"
                     name="nombre"
                     placeholder="Nombre"/>
+                <span  id="nombre" class="errores">text</span>
                 <br />
                 <h2>Apellido:</h2>
                 <input
@@ -32,6 +34,7 @@
                     type="text"
                     name="apellido"
                     placeholder="Apellido"/>
+                    <span id="apellido" class="errores">text</span>
                 <br />
                 <h2>Correo electronico:</h2>
                 <input
@@ -39,6 +42,7 @@
                     name="correo"
                     type="email"
                     placeholder="correo electronico" />
+                    <span id="email" class="errores">text</span>
                 <br/>
                 <h2>Nombre de usuario:</h2>
                 <input
@@ -46,6 +50,7 @@
                     type="text"
                     name="nombreUsuario"
                     placeholder="Nombre usuario"/>
+                    <span id="nombreUsuario" class="errores">text</span>
                 <br />
                 <h2>Contraseña:</h2>
                 <input
@@ -53,22 +58,21 @@
                     type="password"
                     name="contrasena"
                     placeholder="Contraseña"/>
+                    <span id="contrasena" class="errores">text</span>
                 <br/>
                 <h2> Elije el perfil</h2>
-                <select name="perfil">
-         
-                    <option>Administrador</option>
+                <select name="perfil" placeholder="Perfil usuario">
                     <option>Usuario</option>
+                    <option>Administrador</option>
                 </select>
                 <br/>
-                <button type="submit">
-                    <a >Continuar</a>
-                </button>
+                <input   class="boton"type="submit" name="continuar" value="Continuar">
                 <br />
-                <button>
-                    <a href="Iniciosecion.jsp">Regresar</a>
-                </button>
+                <input   type="hidden" name="pagina" value="Crear_cuenta">
             </form>
+            <button class="boton" >
+                <a href="Iniciosecion.jsp"> Regresar</a>
+            </button>
         </div>    
         <% Listas lista = (Listas) session.getAttribute("listas");
             if (lista != null) {

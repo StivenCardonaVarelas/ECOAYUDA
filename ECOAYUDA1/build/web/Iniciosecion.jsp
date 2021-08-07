@@ -50,7 +50,9 @@
                 <a id="crear-cuenta" href="Crear_cuenta.jsp">Crear cuenta</a>
                 <br />
                 <br />
-                <input type="submit"  href="index.jsp"value="Regresar">
+               <button type="submit">
+                    <a href="index.jsp">Regresar</a>
+                </button>
             </form>
         </div> 
     </body>

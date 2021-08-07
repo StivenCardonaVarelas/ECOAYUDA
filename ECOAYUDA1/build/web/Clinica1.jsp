@@ -20,14 +20,14 @@
     <body>
         <div class="container">
 
-            <h1 class="nombre">"Nombre Veterinaria"</h1>
+            <h1 class="nombre">Sociedad protectora de animales</h1>
             <br/>
             <div class="clinica">
                 
             <div>
-            <img class="fondo" src="" alt=""/>
+            
         </div>
-                <img class="icono" src="imagenes/hospital.svg" alt="foto_clinica" />
+                <img class="icono" src="imagenes/clinica1.jpg" alt="foto_clinica" />
             </div>
             <br/>
             <br />

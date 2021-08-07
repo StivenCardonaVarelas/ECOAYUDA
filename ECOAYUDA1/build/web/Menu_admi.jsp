@@ -37,6 +37,12 @@
                 <h2>Clinicas</h2>
                 <p><button> <a href="">Ingresar</a></button></p>
             </div>
+            <br/>
+                <div class="card">
+                    <img src="imagenes/Users.png" alt="Usuarios" style="width:80%">
+                    <h2>Usuarios</h2>
+                    <p><button> <a href="Usuarios.jsp">Ingresar</a></button></p>
+                </div>
             </div>
             <br/>
             <br/>

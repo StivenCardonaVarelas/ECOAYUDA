@@ -18,22 +18,22 @@
         <div class="container">
             <h1 class="nombre">Elije la Veterinaria a conocer</h1>
             <br/>
-            <div class="cards">
+            <div class="cards"> 
                 <div  class="card">
-                    <img src="" alt="" style="width:100%">
-                    <h2></h2>
+                    <img src="imagenes/clinica1.jpg" alt="" style="width:100%">
+                    <h2>Sociedad protectora de animales</h2>
                     <p><button> <a href="Clinica1.jsp">Ingresar</a></button></p>
                 </div>
                 <br/>
                 <div  class="card">
-                    <img src="" alt="" style="width:100%">
-                    <h2></h2>
+                    <img src="imagenes/clinica2.jpg" alt="" style="width:100%">
+                    <h2>Metropolitana</h2>
                     <p><button> <a href="Clinica2.jsp">Ingresar</a></button></p>
                 </div>
                 <br/>
                 <div  class="card">
-                    <img src="" alt="" style="width:100%">
-                    <h2></h2>
+                    <img src="imagenes/clinica3.webp" alt="" style="width:100%">
+                    <h2>Veterinaria Aquavet</h2>
                     <p><button> <a href="Clinica3.jsp">Ingresar</a></button></p>
                 </div>
             </div>
