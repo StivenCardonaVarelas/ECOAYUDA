@@ -32,7 +32,7 @@ function validar() {
     }
     ///validar apellido
     var apellido = document.querySelector('[name=apellido]').value;
- 
+
     if (esVacio(apellido) || stringVacio(apellido)) {
 
         e1 = document.getElementById('apellido');
@@ -44,7 +44,7 @@ function validar() {
 
         estado = false;
     }
-        //validar email
+    //validar email
     var email = document.querySelector('[name=correo]').value;
     if (esVacio(email) || stringVacio(email)) {
         e3 = document.getElementById('email');
@@ -56,42 +56,42 @@ function validar() {
 
         estado = false;
     }
-        //validar nombre de usuario
-        var nombreUsuario =document.querySelector('[name=nombreUsuario]').value;
-        
-        if(esVacio(nombreUsuario)||stringVacio(nombreUsuario)){
-            e2=document.getElementById('nombreUsuario');
-            e2.style.visibility = 'visible';
+    //validar nombre de usuario
+    var nombreUsuario = document.querySelector('[name=nombreUsuario]').value;
+
+    if (esVacio(nombreUsuario) || stringVacio(nombreUsuario)) {
+        e2 = document.getElementById('nombreUsuario');
+        e2.style.visibility = 'visible';
         e2.innerHTML = "Ingrese nombre usuario!";
         setTimeout(function () {
             e2.style.visibility = 'hidden';
         }, tiempo);
-             estado = false;
-        }
-        
-        //validar contraseña
-        var contrasena= document.querySelector('[name=contrasena]').value;
-        if(esVacio(contrasena)||stringVacio(contrasena)){
-            e4=document.getElementById('contrasena');
-            e4.style.visibility = 'visible';
+        estado = false;
+    }
+
+    //validar contraseña
+    var contrasena = document.querySelector('[name=contrasena]').value;
+    if (esVacio(contrasena) || stringVacio(contrasena)) {
+        e4 = document.getElementById('contrasena');
+        e4.style.visibility = 'visible';
         e4.innerHTML = "Ingrese contraseña";
         setTimeout(function () {
             e4.style.visibility = 'hidden';
         }, tiempo);
-             estado = false;
-        } 
-        //validacion de la dijitacion de la contraseña 
-            if(!esVacio(contrasena) && contrasena.length <8){
-                e5=document.getElementById('contrasena');
-            e5.style.visibility = 'visible';
+        estado = false;
+    }
+    //validacion de la dijitacion de la contraseña 
+    if (!esVacio(contrasena) && contrasena.length < 8) {
+        e5 = document.getElementById('contrasena');
+        e5.style.visibility = 'visible';
         e5.innerHTML = "contraseña de 8 carateres";
         setTimeout(function () {
             e5.style.visibility = 'hidden';
         }, tiempo);
-             estado = false;
-                
-            }
-        
+        estado = false;
+
+    }
+
 
 
 
@@ -102,6 +102,82 @@ function validar() {
     return estado;
 }
 
+function validarIniciosesion() {
+    var estado = true;
+    var tiempo = 4000;
+
+    var nombreUsuario = document.querySelector('[name=NombreUsuario]').value;
+    //validacion nombre de usuario
+    if (esVacio(nombreUsuario) || stringVacio(nombreUsuario)) {
+        e2 = document.getElementById('nombreUsuario');
+        e2.style.visibility = 'visible';
+        e2.innerHTML = "Ingrese nombre usuario!";
+        setTimeout(function () {
+            e2.style.visibility = 'hidden';
+        }, tiempo);
+        estado = false;
+    }
+    //validar contraseña
+
+    var contrasena = document.querySelector('[name=contrasena]').value;
+    if (esVacio(contrasena) || stringVacio(contrasena)) {
+        e4 = document.getElementById('contrasena');
+        e4.style.visibility = 'visible';
+        e4.innerHTML = "Ingrese contraseña";
+        setTimeout(function () {
+            e4.style.visibility = 'hidden';
+        }, tiempo);
+        estado = false;
+    }
+
+    if (!esVacio(contrasena) && contrasena.length < 8) {
+        e5 = document.getElementById('contrasena');
+        e5.style.visibility = 'visible';
+        e5.innerHTML = "contraseña de 8 carateres";
+        setTimeout(function () {
+            e5.style.visibility = 'hidden';
+        }, tiempo);
+        estado = false;
+
+    }
+
+
+
+
+
+
+
+    return estado;
+
+}
+
+//validacion de iniciosesion 
+function validarIniciosesion(respuesta) {
+    var tiempo = 4000;
+    e = document.getElementById('validar');
+    e.style.visibility = 'visible';
+    e.style.height = 50 + 'px';
+
+    if (respuesta === 'incorrecto') {
+
+        e.innerHTML = "contraseña Invalida <br/>Usuario Invalido";
+
+    }
+    if (respuesta === 'Usuraio invalido') {
+        e.innerHTML = "Usuario Invalido";
+
+
+    }
+
+    if (respuesta === 'contraseña invalido') {
+
+        e.innerHTML = 'contraseña Invalido';
+    }
+    setTimeout(function () {
+        e.style.visibility = 'hidden';
+    }, tiempo);
+
+}
 
 
 
