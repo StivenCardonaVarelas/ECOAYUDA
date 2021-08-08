@@ -7,6 +7,7 @@ package Servidores;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -72,12 +73,20 @@ public class Usuarios extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
+            String pagina = request.getParameter("pagina");
+        
+            if(pagina.equals("Crear_cuenta")){
             
-        
+                RequestDispatcher despachador = request.getRequestDispatcher("Iniciosecion.jsp");
+                
+                despachador.forward(request, response);
+            }else{
             
+            processRequest(request, response);
+            }
         
         
-        processRequest(request, response);
+        
     }
 
     /**
