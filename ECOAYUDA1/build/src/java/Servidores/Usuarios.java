@@ -36,7 +36,7 @@ public class Usuarios extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet Usuarios</title>");            
+            out.println("<title>Servlet Usuarios</title>");
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet Usuarios at " + request.getContextPath() + "</h1>");
@@ -72,21 +72,35 @@ public class Usuarios extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
-            String pagina = request.getParameter("pagina");
-        
-            if(pagina.equals("Crear_cuenta")){
-            
-                RequestDispatcher despachador = request.getRequestDispatcher("Iniciosecion.jsp");
-                
+
+        String pagina = request.getParameter("pagina");
+
+        if (pagina.equals("Crear_cuenta")) {
+            RequestDispatcher despachador = request.getRequestDispatcher("Iniciosecion.jsp");
+
+            despachador.forward(request, response);
+            //navegacion de Iniciosesio a Perfiles_usuarios
+        } else if (pagina.equals("Iniciosecion")) {
+            String paramNombreUusario = request.getParameter("NombreUsuario");
+            String paramContrasena = request.getParameter("contrasena");
+            String respuesta = validarUsuario(paramNombreUusario, paramContrasena);
+            if (respuesta.equals("valido")) {
+                RequestDispatcher despachador = request.getRequestDispatcher("Perfiles_usuarios.jsp");
+
                 despachador.forward(request, response);
-            }else{
-            
-            processRequest(request, response);
+
+            } else {
+                request.setAttribute("respuesta", respuesta);
+                RequestDispatcher despachador = request.getRequestDispatcher("Iniciosecion.jsp");
+
+                despachador.forward(request, response);
             }
-        
-        
-        
+
+        } else {
+
+            processRequest(request, response);
+        }
+
     }
 
     /**
@@ -98,5 +112,20 @@ public class Usuarios extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
-    
+
+    private String validarUsuario(String nombreUsuario, String contrasena) {
+
+        String validar = "incorrecto";
+        if (nombreUsuario.equals("usuariovip") && contrasena.equals("12345678")) {
+
+            validar = "valido";
+
+        } else if (!nombreUsuario.equals("usuariovip")) {
+            validar = "Usuraio invalido";
+        } else if (!contrasena.equals("12345678")) {
+            validar = "contraseña invalido";
+        }
+        return (validar);
+    }
+
 }
