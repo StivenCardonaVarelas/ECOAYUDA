@@ -24,10 +24,14 @@ public class ListasSimples {
         lista.insertarPrincipioNodo("camila212", "camila","lopera","12345","ccc@tets.com","admin");
         lista.insertarPrincipioNodo("luisa212", "Luisa","muñoz","123","bbb@tets.com","user");
         lista.insertarFinalNodo("luis212", "Luis","lopera","123","aaa@tets.com","admin");
+        lista.borrarNodo(0);
         lista.mostrar();
-        System.out.println("Lista recuperada por posición " + lista.getUsuario(2).nombre);
-        System.out.println("Lista recuperada por posición "+ lista.getUsuario(2).apellido);
-        System.out.println("Lista recuperada por posición"+ lista.getUsuario(2).perfil);
+        
+        
+        
+//        System.out.println("Lista recuperada por posición " + lista.getUsuario(2).nombre);
+//        System.out.println("Lista recuperada por posición "+ lista.getUsuario(2).apellido);
+//        System.out.println("Lista recuperada por posición"+ lista.getUsuario(2).perfil);
     }
     
 }

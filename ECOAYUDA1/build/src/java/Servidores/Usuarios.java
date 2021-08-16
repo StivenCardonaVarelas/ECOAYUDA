@@ -120,9 +120,9 @@ public class Usuarios extends HttpServlet {
 
             validar = "valido";
 
-        } else if (!nombreUsuario.equals("usuariovip")) {
+       } else if (!nombreUsuario.equals("usuariovip") &&contrasena.equals("12345678")) {
             validar = "Usuraio invalido";
-        } else if (!contrasena.equals("12345678")) {
+        } else if (!contrasena.equals("12345678")&& nombreUsuario.equals("usuariovip") ) {
             validar = "contraseña invalido";
         }
         return (validar);
