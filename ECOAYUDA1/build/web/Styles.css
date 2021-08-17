@@ -64,7 +64,7 @@ h2{
 }
 
 .errores{
-    background-color: #CC0000;
+    background-color: #FF0000 ;
     color:   #FFFFFF ;
     margin-left: 10px;
     visibility: hidden;
@@ -203,6 +203,11 @@ h2{
 }
 p{
     font-size: 20px;
+}
+#image{
+    
+    border-style:solid;
+    
 }
 
 

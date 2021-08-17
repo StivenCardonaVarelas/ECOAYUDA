@@ -66,7 +66,7 @@
 
         <script>
 
-            validarIniciosesion('<%=respuesta %>');
+           validarRegistro('<%=respuesta %>');
         </script>
 
 
