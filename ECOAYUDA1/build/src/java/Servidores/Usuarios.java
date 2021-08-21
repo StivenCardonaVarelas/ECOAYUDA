@@ -40,7 +40,6 @@ public class Usuarios extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet Usuarios at " + request.getContextPath() + "</h1>");
-            out.println("<a src=''>My link </a>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -72,10 +71,10 @@ public class Usuarios extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
         String pagina = request.getParameter("pagina");
 
         if (pagina.equals("Crear_cuenta")) {
+
             RequestDispatcher despachador = request.getRequestDispatcher("Iniciosecion.jsp");
 
             despachador.forward(request, response);
@@ -120,12 +119,11 @@ public class Usuarios extends HttpServlet {
 
             validar = "valido";
 
-       } else if (!nombreUsuario.equals("usuariovip") &&contrasena.equals("12345678")) {
+        } else if (!nombreUsuario.equals("usuariovip") && contrasena.equals("12345678")) {
             validar = "Usuraio invalido";
-        } else if (!contrasena.equals("12345678")&& nombreUsuario.equals("usuariovip") ) {
+        } else if (!contrasena.equals("12345678") && nombreUsuario.equals("usuariovip")) {
             validar = "contraseña invalido";
         }
         return (validar);
     }
-
 }
