@@ -209,7 +209,30 @@ p{
     border-style:solid;
     
 }
-
+.cabecera{
+    width: 130px;
+    height: 40px;
+    margin-top: 20px;
+    display: inline-table;
+    font-size: 0.7em;
+    padding: 5px;
+    text-align: left;
+    line-height: 40px;
+    position: relative;
+    
+    
+}
+.filas{
+    width: 130px;
+    height: 20px;
+    margin-top: 5px;
+    display: inline-table;
+    font-size: 0.5em;
+    text-align: left;
+    line-height: 20px;
+    
+    
+}
 
 
 

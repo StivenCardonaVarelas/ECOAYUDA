@@ -12,10 +12,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="imagenes/LogotipoEcoayuda.jpeg">
+         <script type="text/javascript" src="Js/Js3.js"></script>
         <link href="Styles.css" rel="Stylesheet" type="text/css">
         <title>Menú</title>
     </head>
     <body>
+        
         <div  class="container">
             <h1 class="nombre">¿Qué deseas consultar?</h1>
             <br/>
@@ -38,11 +40,15 @@
                 <p><button> <a href="">Ingresar</a></button></p>
             </div>
             <br/>
+            <form method="post" action="UsuarioAdmin" id="llamarServlet" onClick="llamarServlet('llamarServlet')">
                 <div class="card">
                     <img src="imagenes/Users.png" alt="Usuarios" style="width:80%">
                     <h2>Usuarios</h2>
-                    <p><button> <a href="Usuarios.jsp">Ingresar</a></button></p>
+                    <p><button> <a href="UsuariosAdmin.jsp">Ingresar</a></button></p>
                 </div>
+                <input   type="hidden" name="pagina" value="UsuarioAdmin.jsp">
+
+            </form>
             </div>
             <br/>
             <br/>

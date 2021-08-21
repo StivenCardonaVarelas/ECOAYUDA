@@ -34,7 +34,7 @@
                     type="text"
                     name="apellido"
                     placeholder="Apellido"/>
-                    <span id="apellido" class="errores">text</span>
+                <span id="apellido" class="errores">text</span>
                 <br />
                 <h2>Correo electronico:</h2>
                 <input
@@ -42,7 +42,7 @@
                     name="correo"
                     type="email"
                     placeholder="correo electronico" />
-                    <span id="email" class="errores">text</span>
+                <span id="email" class="errores">text</span>
                 <br/>
                 <h2>Nombre de usuario:</h2>
                 <input
@@ -50,7 +50,7 @@
                     type="text"
                     name="nombreUsuario"
                     placeholder="Nombre usuario"/>
-                    <span id="nombreUsuario" class="errores">text</span>
+                <span id="nombreUsuario" class="errores">text</span>
                 <br />
                 <h2>Contraseña:</h2>
                 <input
@@ -58,7 +58,7 @@
                     type="password"
                     name="contrasena"
                     placeholder="Contraseña"/>
-                    <span id="contrasena" class="errores">text</span>
+                <span id="contrasena" class="errores">text</span>
                 <br/>
                 <h2> Elije el perfil</h2>
                 <select name="perfil" placeholder="Perfil usuario">
@@ -66,29 +66,34 @@
                     <option>Administrador</option>
                 </select>
                 <br/>
+
                 <input   class="boton"type="submit" name="continuar" value="Continuar">
+
+
                 <br />
                 <input   type="hidden" name="pagina" value="Crear_cuenta">
+
+                <button class="boton" >
+                    <a href="Iniciosecion.jsp"> Regresar</a>
+                </button>
             </form>
-            <button class="boton" >
-                <a href="Iniciosecion.jsp"> Regresar</a>
-            </button>
+
         </div>    
         <% Listas lista = (Listas) session.getAttribute("listas");
             if (lista != null) {
                 String nombreUsuario = request.getParameter("nombreUsuario");
                 String nombre = request.getParameter("nombre");
-                String apellido=request.getParameter("apellido");
-                String contrasena=request.getParameter("contrasena");
-                String correo=request.getParameter("correo");
-                String perfil=request.getParameter("perfil");
+                String apellido = request.getParameter("apellido");
+                String contrasena = request.getParameter("contrasena");
+                String correo = request.getParameter("correo");
+                String perfil = request.getParameter("perfil");
                 if (nombreUsuario != null) {
-                    lista.insertarPrincipioNodo(nombreUsuario, nombre,apellido,contrasena,correo,perfil);
+                    lista.insertarPrincipioNodo(nombreUsuario, nombre, apellido, contrasena, correo, perfil);
                     lista.mostrar();
                     out.println("<table border='4'>");
                     for (int i = 0; i < lista.getSize(); i++) {
                         out.println("<tr><td>" + lista.getUsuario(i).nombreUsuario + "</td><td>" + lista.getUsuario(i).nombre + "</td><td>" + lista.getUsuario(i).apellido + "</td><td>" + lista.getUsuario(i).contrasena + "</td><td>" + lista.getUsuario(i).correo + "</td><td>" + lista.getUsuario(i).perfil + "</td></tr>");
-                        
+
                     }
                 }
             } else {

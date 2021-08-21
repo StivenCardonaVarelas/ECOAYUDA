@@ -152,30 +152,35 @@ function validarIniciosesion() {
 }
 
 //validacion de iniciosesion 
-function validarIniciosesion(respuesta) {
+function validarRegistro(respuesta) {
     var tiempo = 4000;
     e = document.getElementById('validar');
     e.style.visibility = 'visible';
-    e.style.height = 50 + 'px';
+   
 
     if (respuesta === 'incorrecto') {
+        setTimeout(function () {
+            e.style.visibility = 'hidden';
+            e.style.height= 50+'px';
+        }, tiempo);
 
         e.innerHTML = "contraseña Invalida <br/>Usuario Invalido";
 
-    }
-    if (respuesta === 'Usuraio invalido') {
+    }else if (respuesta === 'Usuraio invalido') {
         e.innerHTML = "Usuario Invalido";
+        setTimeout(function () {
+            e.style.visibility = 'hidden';
+        }, tiempo);
 
 
-    }
+    }else if (respuesta === 'contraseña invalido') {
+         e.innerHTML = 'contraseña Invalido';
+        setTimeout(function () {
+            e.style.visibility = 'hidden';
+        }, tiempo);
 
-    if (respuesta === 'contraseña invalido') {
-
-        e.innerHTML = 'contraseña Invalido';
-    }
-    setTimeout(function () {
-        e.style.visibility = 'hidden';
-    }, tiempo);
+       
+    } 
 
 }
 
