@@ -12,43 +12,46 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="imagenes/LogotipoEcoayuda.jpeg">
-         <script type="text/javascript" src="Js/Js3.js"></script>
+        <script type="text/javascript" src="Js/Js3.js"></script>
         <link href="Styles.css" rel="Stylesheet" type="text/css">
         <title>Menú</title>
     </head>
     <body>
-        
+
         <div  class="container">
             <h1 class="nombre">¿Qué deseas consultar?</h1>
             <br/>
             <div class="cards">
-            <div  class="card">
-                <img src="imagenes/huella.svg" alt="huella" style="width:80%">
-                <h2>Especies</h2>
-                <p><button> <a href="">Ingresar</a></button></p>
-            </div>
-            <br/>
-            <div class="card">
-                <img src="imagenes/bosque.svg" alt="parque" style="width:80%">
-                <h2>Parques</h2>
-                <p><button> <a href="">Ingresar</a></button></p>
-            </div>
-            <br/>
-            <div class="card">
-                <img src="imagenes/clinica.svg" alt="clinica" style="width:80%">
-                <h2>Clinicas</h2>
-                <p><button> <a href="">Ingresar</a></button></p>
-            </div>
-            <br/>
-            <form method="post" action="UsuarioAdmin" id="llamarServlet" onClick="llamarServlet('llamarServlet')">
-                <div class="card">
-                    <img src="imagenes/Users.png" alt="Usuarios" style="width:80%">
-                    <h2>Usuarios</h2>
-                    <p><button> <a href="UsuariosAdmin.jsp">Ingresar</a></button></p>
+                <div  class="card">
+                    <img src="imagenes/huella.svg" alt="huella" style="width:80%">
+                    <h2>Especies</h2>
+                    <p><button> <a href="Menu_especie_Admin.jsp">Ingresar</a></button></p>
                 </div>
-                <input   type="hidden" name="pagina" value="UsuarioAdmin.jsp">
+                <br/>
+                <div class="card">
+                    <img src="imagenes/bosque.svg" alt="parque" style="width:80%">
+                    <h2>Parques</h2>
+                    <p><button> <a href="">Ingresar</a></button></p>
+                </div>
+                <br/>
+                <div class="card">
+                    <img src="imagenes/clinica.svg" alt="clinica" style="width:80%">
+                    <h2>Clinicas</h2>
+                    <p><button> <a href="">Ingresar</a></button></p>
+                </div>
+                <br/>
+                <form method="post" action="UsuarioAdmin" id="llamarServlet" onClick="llamarServlet('llamarServlet')">
+                    <div class="card">
+                        <img src="imagenes/Users.png" alt="Usuarios" style="width:80%">
+                        <h2>Usuarios</h2>
 
-            </form>
+                        <p>
+                            <input   class="boton"type="submit" name="Ingresar" value="Ingresar">
+                        </p>
+                    </div>
+                    <input   type="hidden" name="pagina" value="Menu_admi">
+
+                </form>
             </div>
             <br/>
             <br/>
