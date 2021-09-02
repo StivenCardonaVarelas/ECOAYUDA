@@ -24,7 +24,7 @@
                         <img src="imagenes/loro.png" alt="loro" style="width: 100px;" />
                     </div>
                     <center>
-                        <button class="buttonEspecies" id="button1">
+                        <button class="boton" id="button1">
                             <a class="link" href="Crear_ave_Admin.jsp">Aves</a>
                         </button>                        
                     </center>
@@ -35,8 +35,8 @@
                         <img src="imagenes/pez-payaso.png" alt="pez" style="width: 100px;" />
                     </div>
                     <center>
-                        <button class="buttonEspecies" id="button1">
-                            <a class="link" href="Peces.jsp">Peces</a>
+                        <button class="boton" id="button1">
+                            <a class="link" href="Crear_pez_Admin.jsp">Peces</a>
                         </button>                        
                     </center>
                 </div>
@@ -46,8 +46,8 @@
                         <img src="imagenes/reptilmenu.png" alt="reptil" style="width: 100px;" />
                     </div>
                     <center>
-                        <button class="buttonEspecies" id="button1">
-                            <a class="link" href="Reptiles.jsp">Reptiles</a>
+                        <button class="boton" id="button1">
+                            <a class="link" href="Crear_reptil_Admin.jsp">Reptiles</a>
                         </button>                        
                     </center>
                     <br/> 
@@ -57,7 +57,7 @@
                         <img src="imagenes/anfibio.png" alt="anfibio" style="width: 100px;" />
                     </div>
                     <center>
-                        <button class="buttonEspecies" id="button1">
+                        <button class="boton" id="button1">
                             <a class="link" href="Anfibios.jsp">Anfibios</a>
                         </button>                        
                     </center>
@@ -68,7 +68,7 @@
                         <img src="imagenes/mono.svg" alt="mono" style="width: 100px;" />
                     </div>
                     <center>
-                        <button class="buttonEspecies" id="button1">
+                        <button class="boton" id="button1">
                             <a class="link" href="Mamifero.jsp">Mamíferos</a>
                         </button>                        
                     </center>
@@ -79,7 +79,7 @@
                         <img src="imagenes/mosquito.png" alt="mosquito" style="width: 100px;" />
                     </div>
                     <center>
-                        <button class="buttonEspecies" id="button1">
+                        <button class="boton" id="button1">
                             <a class="link" href=Insectos.jps>Insectos</a>
                         </button>                        
                     </center>
@@ -90,7 +90,7 @@
                         <img src="imagenes/hormiga.png" alt="hormiga" style="width: 100px;" />
                     </div>
                     <center>
-                        <button class="buttonEspecies" id="button1">
+                        <button class="boton" id="button1">
                             <a class="link" href="Artropodos.jsp">Artrópodos</a>
                         </button>                        
                     </center>
@@ -101,7 +101,7 @@
                         <img src="imagenes/arana.png" alt="araña" style="width: 100px;" /> 
                     </div>
                     <center>
-                        <button class="buttonEspecies" id="button1">
+                        <button class="boton" id="button1">
                             <a class="link" href="Aracnidos.jsp">Arácnidos</a>
                         </button>                        
                     </center>
@@ -112,7 +112,7 @@
                         <img src="imagenes/gusano.png" alt="gusano" style="width: 100px;" />
                     </div>
                     <center>
-                        <button class="buttonEspecies" id="button1">
+                        <button class="boton" id="button1">
                             <a class="link" href="Anelidos.jsp">Anélidos</a>
                         </button>                        
                     </center>
@@ -123,7 +123,7 @@
                         <img src="imagenes/cnidario.png" alt="gusano" style="width: 100px;" />
                     </div>
                     <center>
-                        <button class="buttonEspecies" id="button1">
+                        <button class="boton" id="button1">
                             <a class="link" href="Anelidos.jsp">Cnidarios</a>
                         </button>                        
                     </center>
@@ -131,8 +131,8 @@
                 <div/> 
             </div>
         </div>
-        <button>
-            <a href="Menu_usuario.jsp"> Regresar</a>
+        <button class="boton">
+            <a href="Menu_admi.jsp"> Regresar</a>
         </button>
             <br/>
             <br/>

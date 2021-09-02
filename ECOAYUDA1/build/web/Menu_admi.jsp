@@ -25,19 +25,19 @@
                 <div  class="card">
                     <img src="imagenes/huella.svg" alt="huella" style="width:80%">
                     <h2>Especies</h2>
-                    <p><button> <a href="Menu_especie_Admin.jsp">Ingresar</a></button></p>
+                    <p><button class="boton"> <a href="Menu_especie_Admin.jsp">Ingresar</a></button></p>
                 </div>
                 <br/>
                 <div class="card">
                     <img src="imagenes/bosque.svg" alt="parque" style="width:80%">
                     <h2>Parques</h2>
-                    <p><button> <a href="">Ingresar</a></button></p>
+                    <p><button class="boton"> <a href="">Ingresar</a></button></p>
                 </div>
                 <br/>
                 <div class="card">
                     <img src="imagenes/clinica.svg" alt="clinica" style="width:80%">
                     <h2>Clinicas</h2>
-                    <p><button> <a href="">Ingresar</a></button></p>
+                    <p><button class="boton"> <a href="">Ingresar</a></button></p>
                 </div>
                 <br/>
                 <form method="post" action="UsuarioAdmin" id="llamarServlet" onClick="llamarServlet('llamarServlet')">
@@ -55,7 +55,7 @@
             </div>
             <br/>
             <br/>
-            <button>
+            <button class="boton">
                 <a href="Perfiles_usuarios.jsp"> Regresar</a>
             </button>
 

@@ -1,11 +1,10 @@
 <%-- 
-    Document   : Crear_ave_Admin
-    Created on : 30/08/2021, 03:30:56 PM
+    Document   : Crear_pez_Admin
+    Created on : 31/08/2021, 06:01:07 PM
     Author     : stive
 --%>
 
-<%@page import="ClasesEcoayuda.Listas.ListaSimpleAve"%>
-
+<%@page import="ClasesEcoayuda.Listas.ListaSimplePez"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -13,11 +12,11 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="shortcut icon" href="imagenes/LogotipoEcoayuda.jpeg">
         <link href="Styles.css" rel="Stylesheet" type="text/css">
-        <title>Creacion de aves</title>
+        <title>Creacion de pez</title>
     </head>
     <body>
         <div class="container">
-            <h1 class="nombre">Crea un ave nueva!</h1>
+            <h1 class="nombre">Crea un pez nuevo!</h1>
         </div>
         <br/>
         <div class ="container2">
@@ -26,11 +25,11 @@
                 <form  method="post">
                     <input class="form-control2"
                            type="text"
-                           name="nombreave"
-                           placeholder="Nombre del ave"/>
+                           name="nombrepez"
+                           placeholder="Nombre del pez"/>
                     <br/>
                     <br/>
-                    <textarea class="form-control2" name="descripcion"   placeholder="Descripcion del ave"></textarea>
+                    <textarea class="form-control2" name="descripcion"   placeholder="Descripcion del pez"></textarea>
                     <br/>
                     <br/>
                     <input class="form-control2"
@@ -56,11 +55,12 @@
                         <option>Nectarivoro</option>
                         <option>Saprofago</option>
 
+
                     </select>
                     <br/>
                     <br/>
 
-                    <select class="form-control2" name="reproduccionave" placeholder="reproduccion">
+                    <select class="form-control2" name="reproduccionpez" placeholder="reproduccion">
                         <option>tipo de reproducción</option>
                         <option>Asexual:</option>
                         <option>Fisión binaria</option>
@@ -95,42 +95,39 @@
                     <br/>
                     <br/>
                     <input   class="boton" type="submit" name="enviar" value="Enviar" />
-                    <br/>
-                    <br/>
-                    <button class="boton">
-                        <a href="Menu_especie_Admin.jsp"> Regresar</a>
-                    </button>
                 </form>
             </div>
             <div class="tabla">
-                <%   ListaSimpleAve lista = (ListaSimpleAve) session.getAttribute("Lista");
+                <% ListaSimplePez lista1 = (ListaSimplePez) session.getAttribute("Lista");
 
-                    if (lista != null) {
-                        String nombreAve = request.getParameter("nombreave");
-                        String habitatAve = request.getParameter("tipohabitat");
-                        String tipoAve = request.getParameter("tipoespecie");
-                        String alimentacionAve = request.getParameter("tipoalimento");
-                        String reproduccionAve = request.getParameter("reproduccionave");
-                        String numExtremidades = request.getParameter("numeroextremidades");
-                        String tipoExtremidades = request.getParameter("tipoextremidades");
-                        if (nombreAve != null) {
-                            lista.insertarPrincipioNodo(nombreAve, habitatAve, tipoAve, alimentacionAve, reproduccionAve, numExtremidades, tipoExtremidades);
-                            lista.mostrarNodos();
+                    if (lista1 != null) {
+                        String nombrePez = request.getParameter("nombrepez");
+                        String habitatPez = request.getParameter("tipohabitat");
+                        String alimentacionPez = request.getParameter("tipoalimento");
+                        String reproduccionPez = request.getParameter("reproduccionpez");
+                        String tipoPez = request.getParameter("tipoespecie");
+                        String numExtremidadesPez = request.getParameter("numeroextremidades");
+                        String tipoExtremidadesPez = request.getParameter("tipoextremidades");
+
+                        if (nombrePez != null) {
                             out.println("<table  border='4'>");
-                            for (int i = 0; i < lista.getSize(); i++) {
-                                out.println("<tr><td>" + lista.obtenerAve(i).nombreEspecie + "</td><td>" + lista.obtenerAve(i).habitat + "</td><td>" + lista.obtenerAve(i).tipoAve + "</td><td>" + lista.obtenerAve(i).alimentacion + "</td><td>" + lista.obtenerAve(i).reproduccion + "</td><td>" + lista.obtenerAve(i).numExtremidades + "</td><td>" + lista.obtenerAve(i).tipoExtremidades + "</td></tr>");
+                            lista1.insertarPrincipioNodo(nombrePez, habitatPez, alimentacionPez, reproduccionPez, tipoPez, numExtremidadesPez, tipoExtremidadesPez);
+                            lista1.mostrarNodos();
+                            for (int i = 0; i < lista1.getSize(); i++) {
+
+                                out.println("<tr><td>" + lista1.obtenerPez(i).nombreEspecie + "</td><td>" + lista1.obtenerPez(i).habitat + "</td><td>" + lista1.obtenerPez(i).alimentacion + "</td><td>" + lista1.obtenerPez(i).reproduccion + "</td><td>" + lista1.obtenerPez(i).tipoPez + "</td><td>" + lista1.obtenerPez(i).numExtremidades + "</td><td>" + lista1.obtenerPez(i).tipoExtremidades + "</td></tr>");
 
                             }
                         }
                     } else {
-                        lista = new ListaSimpleAve();
-                        lista.destruirLista();
-                        session.setAttribute("Lista", lista);
+                        lista1 = new ListaSimplePez();
+                        lista1.destruirLista();
+                        session.setAttribute("Lista", lista1);
 
                     }
+
                 %>
             </div>
-
         </div>
 
     </body>
