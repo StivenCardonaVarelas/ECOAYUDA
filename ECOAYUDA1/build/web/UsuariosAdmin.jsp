@@ -22,20 +22,25 @@
         <div class="container">
 
             <h1 class="nombre">Listados de usuarios!</h1>
-            <span class="cabecera">Nombre</span>
-            <span class="cabecera">Apellido</span>
-            <span class="cabecera"> Email</span>
-            <span class="cabecera"> Contraseña</span>
-            <span class="cabecera"> Nombre de usuario</span>
-            <span class="cabecera"> Perfil</span>
-
-            <%                String qry = "select * from usuario";
-                ResultSet data = sql.executeQuery(qry);
-                while (data.next()) {
-            %>
-
-            <table>
+            <table class="tabla">
                 <tr>
+                    <td>Nombre</td>
+                    <td>Apellido</td>
+                    <td>Correo </td>
+                    <td>Contraseña</td>
+                    <td>Nombre de usuario</td>
+                    <td>Perfil </td>
+
+                </tr>
+
+                <%                String qry = "select * from usuario";
+                    ResultSet data = sql.executeQuery(qry);
+                    while (data.next()) {
+                %>
+
+                <tr>
+
+
                     <td> 
                         <% out.print(data.getString(2));%>
                     </td>
@@ -51,22 +56,19 @@
                     <td> 
                         <% out.print(data.getString(6));%>
                     </td>
-
-
-
-
-
-
-
-                    <%}
-                        String qry1 = "select * from perfil";
-                        ResultSet data1 = sql.executeQuery(qry1);
-                        while (data1.next()) {  %>
-
                     <td> 
-                        <% out.print(data1.getString(2));%>
+                        <% if ((data.getInt(7)) == 1) {
+                                    out.print("Administrador");
+
+                                } else {
+                                    out.print("Usuario");
+
+                                }
+
+                            }%>
                     </td>
-                    <% }%>
+
+
                 </tr>
             </table>
 
@@ -77,7 +79,8 @@
 
 
 
-
+            <br>
+            <br>
             <button>
                 <a href="Menu_admi.jsp"> Regresar</a>
             </button>

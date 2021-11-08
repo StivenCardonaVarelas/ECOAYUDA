@@ -270,9 +270,15 @@ background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, F
 
 }
 
+.tabla {
+  border: 1px solid black;
+  display: inline-table;
+  text-align: center;
+    margin-top: 50px;
+   
+}
 
 
-
-
-
-
+th, td {
+   border: 1px solid black; 
+}
