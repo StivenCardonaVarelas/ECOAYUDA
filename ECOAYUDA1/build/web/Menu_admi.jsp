@@ -31,7 +31,7 @@
                 <div class="card">
                     <img src="imagenes/bosque.svg" alt="parque" style="width:80%">
                     <h2>Parques</h2>
-                    <p><button class="boton"> <a href="">Ingresar</a></button></p>
+                    <p><button class="boton"> <a href="Crear_parque_Admin.jsp">Ingresar</a></button></p>
                 </div>
                 <br/>
                 <div class="card">

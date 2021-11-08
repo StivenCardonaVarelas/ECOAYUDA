@@ -1,11 +1,10 @@
 <%-- 
-    Document   : Crear_ave_Admin
-    Created on : 30/08/2021, 03:30:56 PM
+    Document   : Crear_anfibio_Admin
+    Created on : 3/09/2021, 03:58:31 PM
     Author     : stive
 --%>
 
-<%@page import="ClasesEcoayuda.Listas.ListaSimpleAve"%>
-
+<%@page import="Colas.ColaAnfibio"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -13,11 +12,11 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="shortcut icon" href="imagenes/LogotipoEcoayuda.jpeg">
         <link href="Styles.css" rel="Stylesheet" type="text/css">
-        <title>Creacion de aves</title>
+        <title>Crear anfibio</title>
     </head>
     <body>
         <div class="container">
-            <h1 class="nombre">Crea un ave nueva!</h1>
+            <h1 class="nombre">Crea un anfibio nuevo!</h1>
         </div>
         <br/>
         <div class ="container2">
@@ -26,11 +25,11 @@
                 <form  method="post">
                     <input class="form-control2"
                            type="text"
-                           name="nombreave"
-                           placeholder="Nombre del ave"/>
+                           name="nombreanfibio"
+                           placeholder="Nombre del anfibio"/>
                     <br/>
                     <br/>
-                    <textarea class="form-control2" name="descripcion"   placeholder="Descripcion del ave"></textarea>
+                    <textarea class="form-control2" name="descripcion"   placeholder="Descripcion del anfibio"></textarea>
                     <br/>
                     <br/>
                     <input class="form-control2"
@@ -60,7 +59,7 @@
                     <br/>
                     <br/>
 
-                    <select class="form-control2" name="reproduccionave" placeholder="reproduccion">
+                    <select class="form-control2" name="reproduccionanfibio" placeholder="reproduccion">
                         <option>tipo de reproducción</option>
                         <option>Asexual:</option>
                         <option>Fisión binaria</option>
@@ -103,36 +102,35 @@
                 </form>
             </div>
             <div class="tabla">
-                <%   ListaSimpleAve lista = (ListaSimpleAve) session.getAttribute("Lista");
 
-                    if (lista != null) {
-                        String nombreAve = request.getParameter("nombreave");
-                        String habitatAve = request.getParameter("tipohabitat");
-                        String tipoAve = request.getParameter("tipoespecie");
-                        String alimentacionAve = request.getParameter("tipoalimento");
-                        String reproduccionAve = request.getParameter("reproduccionave");
-                        String numExtremidades = request.getParameter("numeroextremidades");
-                        String tipoExtremidades = request.getParameter("tipoextremidades");
-                        if (nombreAve != null) {
-                            lista.insertarPrincipioNodo(nombreAve, habitatAve, tipoAve, alimentacionAve, reproduccionAve, numExtremidades, tipoExtremidades);
-                            lista.mostrarNodos();
+                <% ColaAnfibio cola = (ColaAnfibio) session.getAttribute("Cola");
+                    if (cola != null) {
+                        String nombreAnfibio = request.getParameter("nombreanfibio");
+                        String habitatAnfibio = request.getParameter("tipohabitat");
+                        String alimentacionAnfibio = request.getParameter("tipoalimento");
+                        String reproduccionAnfibio = request.getParameter("reproduccionanfibio");
+                        String tipoAnfibio = request.getParameter("tipoespecie");
+                        String numExtremidadesAnfibio = request.getParameter("numeroextremidades");
+                        String tipoExtremidadesAnfibio = request.getParameter("tipoextremidades");
+                        if (nombreAnfibio != null) {
+                            cola.encolar(nombreAnfibio, habitatAnfibio, alimentacionAnfibio, reproduccionAnfibio, tipoAnfibio, numExtremidadesAnfibio, tipoExtremidadesAnfibio);
+                            cola.mostrarNodos();
                             out.println("<table  border='4'>");
-                            for (int i = 0; i < lista.getSize(); i++) {
-                                out.println("<tr><td>" + lista.obtenerAve(i).nombreEspecie + "</td><td>" + lista.obtenerAve(i).habitat + "</td><td>" + lista.obtenerAve(i).tipoAve + "</td><td>" + lista.obtenerAve(i).alimentacion + "</td><td>" + lista.obtenerAve(i).reproduccion + "</td><td>" + lista.obtenerAve(i).numExtremidades + "</td><td>" + lista.obtenerAve(i).tipoExtremidades +"</td></tr>");
-                                    
-                                
+                            for (int i = 0; i < cola.getSize(); i++) {
+                                out.println("<tr><td>" + cola.obtenerAnfibio(i).nombreEspecie + "</td><td>" + cola.obtenerAnfibio(i).habitat + "</td><td>" + cola.obtenerAnfibio(i).alimentacion + "</td><td>" + cola.obtenerAnfibio(i).tipoEspecie + "</td><td>" + cola.obtenerAnfibio(i).reproduccion + "</td><td>" + cola.obtenerAnfibio(i).numExtremidades + "</td><td>" + cola.obtenerAnfibio(i).tipoExtremidades + " </td></tr>");
+
                             }
                         }
                     } else {
-                        lista = new ListaSimpleAve();
-                        lista.destruirLista();
-                        session.setAttribute("Lista", lista);
+
+                        cola = new ColaAnfibio();
+                        cola.deseconlar();
+                        session.setAttribute("Cola", cola);
 
                     }
+
                 %>
             </div>
-
         </div>
-
     </body>
 </html>

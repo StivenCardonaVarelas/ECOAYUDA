@@ -58,7 +58,7 @@
                     </div>
                     <center>
                         <button class="boton" id="button1">
-                            <a class="link" href="Anfibios.jsp">Anfibios</a>
+                            <a class="link" href="Crear_anfibio_Admin.jsp">Anfibios</a>
                         </button>                        
                     </center>
                 </div>
@@ -80,7 +80,7 @@
                     </div>
                     <center>
                         <button class="boton" id="button1">
-                            <a class="link" href=Insectos.jps>Insectos</a>
+                            <a class="link" href=Crear_insecto_Admin.jsp>Insectos</a>
                         </button>                        
                     </center>
                 </div>
