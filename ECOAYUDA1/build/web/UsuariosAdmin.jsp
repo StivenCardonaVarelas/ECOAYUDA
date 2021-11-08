@@ -24,16 +24,16 @@
             <h1 class="nombre">Listados de usuarios!</h1>
             <span class="cabecera">Nombre</span>
             <span class="cabecera">Apellido</span>
-            <span class="cabecera"> Nombre de usuario</span>
             <span class="cabecera"> Email</span>
             <span class="cabecera"> Contraseña</span>
+            <span class="cabecera"> Nombre de usuario</span>
             <span class="cabecera"> Perfil</span>
 
             <%                String qry = "select * from usuario";
                 ResultSet data = sql.executeQuery(qry);
                 while (data.next()) {
             %>
-            
+
             <table>
                 <tr>
                     <td> 
@@ -51,16 +51,25 @@
                     <td> 
                         <% out.print(data.getString(6));%>
                     </td>
+
+
+
+
+
+
+
+                    <%}
+                        String qry1 = "select * from perfil";
+                        ResultSet data1 = sql.executeQuery(qry1);
+                        while (data1.next()) {  %>
+
                     <td> 
-                        <% out.print(data.getString(7));%>
+                        <% out.print(data1.getString(2));%>
                     </td>
-
-
+                    <% }%>
                 </tr>
             </table>
 
-            <%} %>
-              
 
 
 
